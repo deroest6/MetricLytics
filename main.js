@@ -10,11 +10,13 @@ $(window).scroll(
     // if user has scrolled past header, initiate the scroll up/scroll down hide show effect
     if( $(window).scrollTop() > headerHeight ) {
       if (currentTop < this.previousTop) {
-        //$(".sidebar em").text("Up");
+        $(".masthead").removeClass("hide");
+        $(".masthead").addClass("show");
         $(".header").removeClass("hide");
         $(".header").addClass("show");
       } else {
-       // $(".sidebar em").text("Down");
+        $(".masthead").removeClass("show");
+        $(".masthead").addClass("hide");
         $(".header").removeClass("show");
         $(".header").addClass("hide");
       }
