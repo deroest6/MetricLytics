@@ -78,8 +78,9 @@ body {
  * Header
  */
 .masthead-brand {
-  margin-top: 10px;
+  margin-top: 1px;
   margin-bottom: 10px;
+  font-size: 4rem;
 }
 
 .masthead-nav > li {
@@ -199,7 +200,7 @@ main {
 
 .content-container {
    color: #5a5a5a;
-   background-color: #fff;
+   background-color: #FBF7E4; 
    padding-top: 10%;
 }
 /* CUSTOMIZE THE NAVBAR
@@ -321,12 +322,12 @@ a[href^="tel:"]:before {
 }
 
 .important {
-  color: orange;
+  color: #9D0015;
   text-decoration: none;
 }
 
 .important-secondary {
-  color: skyblue;
+  color: #D3CEAA;
 }
 
 
