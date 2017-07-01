@@ -12,7 +12,12 @@ a:focus,
 a:hover {
   color: #6499BE;
 }
-
+p {
+  font-family: raleway, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -64,7 +69,7 @@ body {
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-shadow: 0 1px 3px rgba(0,0,0,.5), 5px 5px 50px black;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
@@ -103,7 +108,6 @@ body {
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
 }
@@ -128,8 +132,18 @@ body {
     float: right;
   }
 }
-
-
+/* Landing Page arrow styling and positioning */
+.landingPage_downArrow-position {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+}
+/* Fix for small screens where the arrow isnt centered correctly */
+@media screen (max-width: 768) {
+  .landingPage_downArrow-position {
+    left: 40%;
+  }
+}
 /*
  * Cover
  */
@@ -151,7 +165,6 @@ body {
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
 }
 
@@ -208,34 +221,14 @@ body {
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-/* Box Shadow Styles */
-
-.top {
-  box-shadow: 0 -5px 5px -5px #333;
-}
-      
-.right {
-  box-shadow: 5px 0 5px -5px #333;
-}
-      
+/* Box Shadow Styles */    
 .box_shadow-bottom {
   box-shadow: 0 5px 5px -5px #333;
 }
-      
-.left {
-  box-shadow: -5px 0 5px -5px #333;
-}
-      
-.all {
-  box-shadow: 0 0 5px #333;
-}
-
 .content-container {
    padding-top: 10%;
    color: rgb(35,35,35);
 }
-
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -294,10 +287,14 @@ body {
 .tagLine {
   padding-bottom: 15%;
 }
-.tagLine_text-style {
-  font-family: acumin-pro-condensed, sans-serif;
-  font-style: normal;
-  font-weight: 100;
+p #tagLine_text_style {
+font-family: hatch, serif;
+font-style: normal;
+font-weight: 300;
+  font-size: 18px;
+}
+.logo-red {
+  color: #B40404;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -357,20 +354,25 @@ body {
   box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 a[href^="tel:"] {
-  color: orange;
+  color: #B40404;
   text-decoration: none;
   font-size: 1.75em;
+}
+a[href^="tel:"]:hover, a[href^="tel:"]:active {
+  color: white;
+  text-shadow: 1px 1px 1px white,1px 1px 1px grey; 
 }
 a[href^="tel:"]:before {
   content: "\260e";
   margin-right: 0.5em;
 }
 .hover_zoom:hover {
-  transform: scale(1.4);
-  transition: all .5s ease-in-out;
+  transform: scale(1.2);
+  transition: all .5s ease-all;
 }
 .text-muted {
-  color: rgba(80,80,80,.9);
+  color: #B40404;/*rgba(80,80,80,.9);*/
+  text-shadow: 1px 1px 2px black;
 }
 .text_color-primary {
   color: rgb(0,142,172);
