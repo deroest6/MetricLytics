@@ -54,9 +54,11 @@ body {
   font-family: acumin-pro-condensed, mr-eaves-modern, sans-serif;
   font-style: normal;
   font-weight: 100;
+  text-rendering: optimizeLegibility;
 }
 .lead {
   line-height: 1.75;
+  font-weight: 400;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -285,13 +287,8 @@ body {
   letter-spacing: -1px;
 }
 .tagLine {
+  font-size: ;
   padding-bottom: 15%;
-}
-p #tagLine_text_style {
-font-family: hatch, serif;
-font-style: normal;
-font-weight: 300;
-  font-size: 18px;
 }
 .logo-red {
   color: #B40404;
@@ -353,18 +350,24 @@ font-weight: 300;
   padding: 5% 5% 1% 5%;
   box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
-a[href^="tel:"] {
-  color: #B40404;
+.index a[href^="tel:"] {
+  color: #ff392e;
   text-decoration: none;
   font-size: 1.75em;
 }
-a[href^="tel:"]:hover, a[href^="tel:"]:active {
+.index a[href^="tel:"]:hover, a[href^="tel:"]:active {
   color: white;
   text-shadow: 1px 1px 1px white,1px 1px 1px grey; 
 }
-a[href^="tel:"]:before {
+.index a[href^="tel:"]:before {
   content: "\260e";
   margin-right: 0.5em;
+}
+/* Query for adjusting the call number to be larger on big screens */
+@media (min-width: 1900px) {
+  a[href^="tel:"] {
+    font-size: 3.75em;
+  }
 }
 .hover_zoom:hover {
   transform: scale(1.2);
@@ -395,9 +398,7 @@ removal on previous row */
 .footer_name_size_increase {
   font-size: 1.25em;
 }
-/* CONTACT PAGE STYLES ------------------------------------
---------------------------------------------------------------
------------------------------------------------------------*/
+
 
 .featurette row {
   padding-bottom: 10%;
@@ -470,5 +471,230 @@ font-size: 280%;
 @media (max-width: 500px) {
   .content_header-large h2 {
     margin-bottom: 35px;
+  }
+}
+
+/* CONTACT PAGE STYLES ------------------------------------
+--------------------------------------------------------------
+-----------------------------------------------------------*/
+/* Contact page jumbotron classes */
+.contact p {
+  color: rgb(40,40,40);
+  font-family: raleway, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+.contact .jumbotron h1 {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  font-size: 65px;
+  
+}
+@media (min-width: 700px) {
+.contact .jumbotron h1 {
+  padding-top: 6%;
+  padding-bottom: 6%;
+  font-size: 130px;
+  }
+}
+.contact .jumbotron {
+  padding-top: none;
+  padding-bottom: none;
+  margin-bottom: none;
+  margin-top: none;
+}
+.background--abstract {
+  background-image: url(../images/black_abstract_wash_mod_min.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.contact--blackShadow {
+  text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.contact ul li a {
+  color: rgba(30,30,30,.6);
+} 
+@media (min-width: 625px) {
+  .map img {
+    width: 70%;
+    height: 15%;
+  }
+  .contact .footer__side--spacing {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+.footer__side--spacing {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.btn-xlarge {
+  padding: 13px 28px;
+}
+.map {
+  width: 70%;
+  height: 20%;
+  padding: none;
+  margin: none;
+}
+.line__spacing--bottom {
+  padding-bottom: 10%;
+}
+.line__spacing--top {
+  padding-top: 10%;
+}
+.call__text--readable {
+  font-family: urbana, sans-serif;
+  font-size: 35px;
+}
+.call__text--pastelRed {
+  color: #ff392e;
+}
+.text__shadow--logo {
+  text-shadow: 1px 2px 3px rgba(0,0,0,.7);
+}
+.contact .jumbotron {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.box__shadow--inset {
+  box-shadow: inset 0px -20px 100px rgba(0,0,0,.1);
+}
+.footer__style--lightTheme {
+  color: white;
+  background-color: rgba(20,20,20,.04);
+}
+@media (min-width: 1200px) {
+  .contact .footer__increase--verticalSpacing {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+/* ABOUT PAGE STYLES */
+#mission__statement {
+  color: rgba(30,30,30,.9);
+  padding-top: 20%;
+  font-size: 50px;
+}
+.about body {
+   color: black;
+}
+.about .masthead-nav > li > a {
+    color: rgba(30,30,30.7);
+}
+.about p {
+  color: #5C5C5C;
+}
+.about li a {
+  color: rgba(30,30,30,.5);
+}
+.content__wrapper__squeezed {
+  max-width: 90%;
+  margin: auto;
+}
+@media (min-width: 600px) {
+  .content__wrapper__squeezed {
+    max-width: 90%;
+    margin: auto;
+  }
+  #mission__statement {
+    padding-top: 15%;
+  }
+  .text__size--enlarge {
+    font-size: 52px;
+  }
+}
+.copyright {
+  font-size: 12px;
+}
+.about h1,h2,h3,h4,h5,h6 {
+  color: #444;
+}
+.feature__box--shadow {
+  box-shadow: 0px 0px 10px #999;
+}
+.about text__shadow--logo {
+  text-shadow: 1px 1px 3px rgba(30,30,30,.7);
+}
+.text__size--enlarge {
+  font-size: 38px;
+}
+.text__muted--black {
+  color: #444;
+  text-shadow: .5px .5px 0.5px grey;
+}
+.about
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #5A5A5A;
+  border-bottom-color: #5A5A5A;
+}
+.about .container {
+  padding-bottom: 15%;
+}
+.about p {
+  padding-bottom: 1%;
+}
+.section--paddingBottom {
+  padding-bottom: 20%;
+}
+.section__highlight--light {
+  background-color: rgba(0,0,0,.05);
+}
+.about .jumbotron {
+  box-shadow: inset 0 0 200px rgba(0,0,0,.2);
+}
+.about .jumbotron {
+  margin-bottom: 10%;
+}
+@media (min-width: 600px) {
+  .text__size--enlarge {
+    font-size: 63px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1500px) {
+  #mission__statement {
+    font-size: 90px;
+  }
+}
+@media (min-width: 1500px) {
+  #mission__statement {
+      font-size: 120px;
+  }
+  .jumbotron {
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .text__size--enlarge {
+    font-size: 90px;
+  }
+}
+@media (min-width: 760px) {
+  .about .jumbotron {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+  }
+}
+.about .main .container {
+  max-width: 80%;
+}
+@media (min-width: 2000px) {
+  .about .main .container {
+    max-width: 90%;
   }
 }
