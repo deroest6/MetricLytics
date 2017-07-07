@@ -138,10 +138,11 @@ body {
 .landingPage_downArrow-position {
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  right: 48%;
+  vertical-align: center;
 }
 /* Fix for small screens where the arrow isnt centered correctly */
-@media screen (max-width: 768) {
+@media (min-width: 768) {
   .landingPage_downArrow-position {
     left: 40%;
   }
