@@ -138,7 +138,7 @@ body {
 .landingPage_downArrow-position {
   position: absolute;
   bottom: 5%;
-  right: 48%;
+  right: 41%;
   vertical-align: center;
 }
 /* Fix for small screens where the arrow isnt centered correctly */
@@ -717,4 +717,12 @@ font-size: 280%;
 }
 .about .masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
   border-bottom-color: rgba(0,0,0,.3);
+}
+@media (max-width: 600px) {
+  .contact footer {
+  padding-bottom: 10%;
+  }
+  .about footer {
+    padding-bottom: 4%;
+  }
 }

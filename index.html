@@ -4,22 +4,46 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta description=""
+    <meta description="">
     <!-- The above 3 meta tags must come first in the head; any other head content must come after these tags -->
-    <title>MetricLytics | Google Analytics & Tag Manager | Implementation & Analysis</title>
-    <!-- Font Kits -->
-    <script src="https://use.typekit.net/hdm5yzr.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <title>Google Analytics Implementation & Analysis | Tag Manager Integration</title>
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102215336-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PRX22GN');</script>
+    <!-- End Google Tag Manager -->
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="/css/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
     <!-- Main CSS -->
     <link href="css/main.css" rel="stylesheet">
+    <!-- Font Kits -->
+    <script src="https://use.typekit.net/hdm5yzr.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    
   </head>
   <body class="index">
+
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRX22GN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
       <div class="site-wrapper">
 
@@ -80,7 +104,7 @@
           <div class="col-lg-4">
             <img class="img-circle animated bounceInUp" src="images/googleTagManager-mod-min.png" alt="Google Tag Manager Logo" width="140" height="140">
             <h2>Google Tag Manager</h2>
-            <p class="trio__text--size">Marketers want tag management because it allows them to have the power to set up tags needed for their campaigns with minimal need of a developer. Integrating it with Analytics is quick and easy and delivers a one-two combo. </p>
+            <p class="trio__text--size">Marketers want tag management because it allows them to have the power to set up tags needed for their campaigns with minimal need of a developer. Integrating it with analytics is quick and easy and delivers a one-two combo. </p>
             <p><a class="btn btn_wideBox btn-black" href="https://www.google.com/analytics/tag-manager/" role="button">View details &raquo;</a></p>
           </div><!-- .col-lg-4 -->
 
@@ -141,7 +165,7 @@
           <div class="row"><!-- ROW -->
             <div class="col-lg-4 col-xs-12">
               <p class="footer_text_size_increase"><span .footer_logo-big>MetricLytics</span><br>
-              Jantsen Deroest<br>
+              Jantsen DeRoest<br>
               Springville, UT 84663<br></p>
             </div>
             <div class="col-lg-4">
@@ -169,6 +193,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!--<script src="js/main.js"></script>-->
+    <script src="js/main.js"></script>
   </body>
 </html>
