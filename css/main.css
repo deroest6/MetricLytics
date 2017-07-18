@@ -137,14 +137,19 @@ body {
 /* Landing Page arrow styling and positioning */
 .landingPage_downArrow-position {
   position: absolute;
-  bottom: 5%;
+  bottom: 6%;
   right: 41%;
   vertical-align: center;
 }
 /* Fix for small screens where the arrow isnt centered correctly */
-@media (min-width: 768) {
+@media (min-width: 2000px) {
   .landingPage_downArrow-position {
-    left: 40%;
+    right: 49.2%;
+  }
+}
+@media (min-width: 800px) and (max-width: 1999px){
+  .landingPage_downArrow-position {
+    right: 48.3%;
   }
 }
 /*
@@ -585,7 +590,13 @@ font-size: 280%;
     padding-bottom: 5%;
   }
 }
-/* ABOUT PAGE STYLES */
+
+
+/* ABOUT PAGE STYLES 
+------------------------------
+------------------------------
+------------------------------
+------------------------------*/
 #mission__statement {
   color: rgba(30,30,30,.9);
   padding-top: 20%;
@@ -692,6 +703,9 @@ font-size: 280%;
     padding-bottom: 10%;
     margin-bottom: 5%;
   }
+  .about .container {
+    padding-bottom: 1%;
+  }
 }
 .about .main {
   max-width: 80%;
@@ -713,7 +727,7 @@ font-size: 280%;
 }
 .about html, .about body {
   background-color: rgba(30,30,30,.03);
-  height: 0px;
+  height: 100%;
 }
 .about .masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
   border-bottom-color: rgba(0,0,0,.3);
@@ -725,4 +739,12 @@ font-size: 280%;
   .about footer {
     padding-bottom: 4%;
   }
+}
+
+.about html, .contact html {
+    margin-bottom: 1.5%;
+}
+body {
+  height: 100vh;
+  background-size: cover;
 }
