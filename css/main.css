@@ -135,7 +135,7 @@ body {
   }
 }
 /* Landing Page arrow styling and positioning */
-.landingPage_downArrow-position {
+.downArrow-position {
   position: absolute;
   bottom: 6%;
   right: 41%;
@@ -143,12 +143,12 @@ body {
 }
 /* Fix for small screens where the arrow isnt centered correctly */
 @media (min-width: 2000px) {
-  .landingPage_downArrow-position {
+  .downArrow-position {
     right: 49.2%;
   }
 }
 @media (min-width: 800px) and (max-width: 1999px){
-  .landingPage_downArrow-position {
+  .downArrow-position {
     right: 48.3%;
   }
 }
@@ -216,11 +216,6 @@ body {
   }
 }
 
-
-
-
-
-
 /* MAIN CONTENT STYLING 
 -------------------------------------------------
 --------------------------------------------------*/
@@ -267,7 +262,6 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 20px;
   text-align: center;
 }
 .marketing h2 {
@@ -277,7 +271,9 @@ body {
   margin-right: 10px;
   margin-left: 10px;
 }
-
+.featurette-spacing {
+  margin-bottom: 22%;
+}
 
 /* Featurettes
 ------------------------- */
@@ -285,23 +281,22 @@ body {
   font-size: 98%;
 }
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 80px 0;
 }
-
-/* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
 }
-.tagLine {
-  font-size: ;
-  padding-bottom: 15%;
+#tagline { /* This is linked to the down arrow above the fold (Dont rename)*/
+  padding-bottom: 30%;
+  margin-bottom: 3em;
 }
 .logo-red {
   color: #B40404;
 }
-/* RESPONSIVE CSS
+
+/* Media Queries 
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
@@ -320,30 +315,21 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
-  /* Content Container top padding adjusted for large screens */
   .content-container {
     padding-top: 6%;
   }
-  /* Content container tag line modified to look important and seperate from the rest of the content */
-  .tag_line {
-    padding-bottom: 50%;
+  #tagline {
+    margin-bottom: 50%;
   }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
   .featurette-heading {
     font-size: 50px;
+    margin-bottom: 5%;
   }
-;}
+}
 
 @media (min-width: 992px) {
   .featurette-heading {
@@ -386,7 +372,7 @@ body {
   text-shadow: 1px 1px 2px black;
 }
 .text_color-primary {
-  color: rgb(0,142,172);
+  color: #B40404;
   text-decoration: none;
 }
 .text_color-secondary {
